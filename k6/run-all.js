@@ -3,7 +3,7 @@ import testGetEntities from "./test-get-entities.js";
 
 export let options = {
     vus: 100, // Количество виртуальных пользователей
-    duration: '5m', // Продолжительность теста
+    duration: '10m', // Продолжительность теста
     thresholds: {
         'http_req_duration': ['p(99) < 500'],
         'http_reqs': ['rate<0.03']

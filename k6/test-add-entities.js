@@ -14,7 +14,9 @@ export default function () {
         name: 'Test Entity',
     });
 
-    post(HOST, payload, DEFAULT_PARAMS, addStats());
+    for (let i = 0; i < 10; i++) {
+        post(HOST, payload, DEFAULT_PARAMS, addStats());
+    }
 
-    sleep(5);
+    sleep(1);
 }
